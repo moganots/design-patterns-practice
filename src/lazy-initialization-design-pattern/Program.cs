@@ -1,0 +1,12 @@
+﻿using System;
+
+namespace lazy_initialization_design_pattern
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}

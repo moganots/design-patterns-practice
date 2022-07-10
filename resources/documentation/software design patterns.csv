@@ -1,0 +1,60 @@
+Name;Type;Description
+Abstract factory;Creational pattern;Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
+Builder;Creational pattern;Separate the construction of a complex object from its representation, allowing the same construction process to create various representations.
+Dependency Injection;Creational pattern;A class accepts the objects it requires from an injector instead of creating the objects directly.
+Factory method;Creational pattern;Define an interface for creating a single object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
+Lazy initialization;Creational pattern;"Tactic of delaying the creation of an object, the calculation of a value, or some other expensive process until the first time it is needed. This pattern appears in the GoF catalog as ""virtual proxy"", an implementation strategy for the Proxy pattern."
+Multiton;Creational pattern;Ensure a class has only named instances, and provide a global point of access to them.
+Object pool;Creational pattern;Avoid expensive acquisition and release of resources by recycling objects that are no longer in use. Can be considered a generalisation of connection pool and thread pool pattern.
+Prototype;Creational pattern;Specify the kinds of objects to create using a prototypical instance, and create new objects from the 'skeleton' of an existing object, thus boosting performance and keeping memory footprints to a minimum.
+Resource acquisition is initialization;Creational pattern;Ensure that resources are properly released by tying them to the lifespan of suitable objects.
+Singleton;Creational pattern;Ensure a class has only one instance, and provide a global point of access to it.
+Adapter;Structural pattern;Convert the interface of a class into another interface clients expect. An adapter lets classes work together that could not otherwise because of incompatible interfaces. The enterprise integration pattern equivalent is the translator.
+Wrapper;Structural pattern;Convert the interface of a class into another interface clients expect. An adapter lets classes work together that could not otherwise because of incompatible interfaces. The enterprise integration pattern equivalent is the translator.
+Translator;Structural pattern;Convert the interface of a class into another interface clients expect. An adapter lets classes work together that could not otherwise because of incompatible interfaces. The enterprise integration pattern equivalent is the translator.
+Bridge;Structural pattern;Decouple an abstraction from its implementation allowing the two to vary independently.
+Composite;Structural pattern;Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
+Decorator;Structural pattern;Attach additional responsibilities to an object dynamically keeping the same interface. Decorators provide a flexible alternative to subclassing for extending functionality.
+Extension object;Structural pattern;Adding functionality to a hierarchy without changing the hierarchy.
+Facade;Structural pattern;Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
+Flyweight;Structural pattern;Use sharing to support large numbers of similar objects efficiently.
+Front controller;Structural pattern;The pattern relates to the design of Web applications. It provides a centralized entry point for handling requests.
+Marker;Structural pattern;Empty interface to associate metadata with a class.
+Module;Structural pattern;Group several related elements, such as classes, singletons, methods, globally used, into a single conceptual entity.
+Proxy;Structural pattern;Provide a surrogate or placeholder for another object to control access to it.
+Twin;Structural pattern;Twin allows modeling of multiple inheritance in programming languages that do not support this feature.
+Blackboard;Behavioral pattern;Artificial intelligence pattern for combining disparate sources of data (see blackboard system)
+Chain of responsibility;Behavioral pattern;Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it.
+Command;Behavioral pattern;Encapsulate a request as an object, thereby allowing for the parameterization of clients with different requests, and the queuing or logging of requests. It also allows for the support of undoable operations.
+Interpreter;Behavioral pattern;Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
+Iterator;Behavioral pattern;Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+Mediator;Behavioral pattern;Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it allows their interaction to vary independently.
+Memento;Behavioral pattern;Without violating encapsulation, capture and externalize an object's internal state allowing the object to be restored to this state later.
+Null object;Behavioral pattern;Avoid null references by providing a default object.
+Observer;Behavioral pattern;Define a one-to-many dependency between objects where a state change in one object results in all its dependents being notified and updated automatically.
+Publish Subscribe;Behavioral pattern;Define a one-to-many dependency between objects where a state change in one object results in all its dependents being notified and updated automatically.
+Servant;Behavioral pattern;Define common functionality for a group of classes. The servant pattern is also frequently called helper class or utility class implementation for a given set of classes. The helper classes generally have no objects hence they have all static methods that act upon different kinds of class objects.
+Specification;Behavioral pattern;Recombinable business logic in a Boolean fashion.
+State;Behavioral pattern;Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
+Strategy;Behavioral pattern;Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+Template method;Behavioral pattern;Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
+Visitor;Behavioral pattern;Represent an operation to be performed on instances of a set of classes. Visitor lets a new operation be defined without changing the classes of the elements on which it operates.
+Fluent Interface;Behavioral pattern;Design an API to be method chained so that it reads like a DSL. Each method call returns a context through which the next logical method call(s) are made available.
+Active Object;Concurrency pattern;Decouples method execution from method invocation that reside in their own thread of control. The goal is to introduce concurrency, by using asynchronous method invocation and a scheduler for handling requests.
+Balking;Concurrency pattern;Only execute an action on an object when the object is in a particular state.
+Binding properties;Concurrency pattern;Combining multiple observers to force properties in different objects to be synchronized or coordinated in some way.[22]
+Compute kernel;Concurrency pattern;The same calculation many times in parallel, differing by integer parameters used with non-branching pointer math into shared arrays, such as GPU-optimized Matrix multiplication or Convolutional neural network.
+Double-checked locking;Concurrency pattern;"Reduce the overhead of acquiring a lock by first testing the locking criterion (the 'lock hint') in an unsafe manner; only if that succeeds does the actual locking logic proceed. Can be unsafe when implemented in some language/hardware combinations. It can therefore sometimes be considered an anti-pattern."
+Event-based asynchronous;Concurrency pattern;Addresses problems with the asynchronous pattern that occur in multithreaded programs.[23]
+Guarded suspension;Concurrency pattern;Manages operations that require both a lock to be acquired and a precondition to be satisfied before the operation can be executed.
+Join;Concurrency pattern;Join-pattern provides a way to write concurrent, parallel and distributed programs by message passing. Compared to the use of threads and locks, this is a high-level programming model.
+Lock;Concurrency pattern;"One thread puts a ""lock"" on a resource, preventing other threads from accessing or modifying it.[24]"
+Messaging design pattern;Concurrency pattern;Allows the interchange of information (i.e. messages) between components and applications.
+Monitor object;Concurrency pattern;An object whose methods are subject to mutual exclusion, thus preventing multiple objects from erroneously trying to use it at the same time.
+Reactor;Concurrency pattern;A reactor object provides an asynchronous interface to resources that must be handled synchronously.
+Read-write lock;Concurrency pattern;Allows concurrent read access to an object, but requires exclusive access for write operations. An underlying semaphore might be used for writing, and a Copy-on-write mechanism may or may not be used.
+Scheduler;Concurrency pattern;Explicitly control when threads may execute single-threaded code.
+Thread pool;Concurrency pattern;A number of threads are created to perform a number of tasks, which are usually organized in a queue. Typically, there are many more tasks than threads. Can be considered a special case of the object pool pattern.
+Thread-specific storage;Concurrency pattern;"Static or ""global"" memory local to a thread."
+Safe Concurrency with Exclusive Ownership;Concurrency pattern;Avoiding the need for runtime concurrent mechanisms, because exclusive ownership can be proven. This is a notable capability of the Rust language, but compile-time checking isn't the only means, a programmer will often manually design such pattern into code - omitting the use of locking mechanism because the programmer assesses that a given variable is never going to be concurrently accessed.
+CPU atomic operation;Concurrency pattern;x86 and other CPU architectures support a range of atomic instructions that guarantee memory safety for modifying and accessing primitive values (integers). For example, two threads may both increment a counter safely. These capabilities can also be used to implement the mechanisms for other concurrency pattern as above. The C# language uses the Interlocked class for these capabilities.
